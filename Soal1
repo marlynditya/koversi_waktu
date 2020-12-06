@@ -1,0 +1,27 @@
+waktu = int(input('Masukkan Detik: '))
+satu_jam = 3600
+satu_menit = 60
+
+jam = waktu // satu_jam
+waktu %= 3600
+menit = waktu // satu_menit
+waktu %= 60
+detik = waktu
+
+if len(str(jam)) == 1 :
+    jam = str(0) + str(jam)
+else:
+    jam = str(jam)
+
+if len(str(menit)) == 1 :
+    menit = str(0) + str(menit)
+else:
+    menit = str(menit) 
+
+if len(str(detik)) == 1 :
+    detik = str(0) + str(detik)
+else:
+    detik = str(detik)
+
+
+print(jam, ':', menit,':',detik)
